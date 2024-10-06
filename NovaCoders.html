@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Climate Change Story</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="landing-page">
+        <h1>The Climate Change Story: A Journey Through Time</h1>
+        <p>Explore the impact of climate change from the Industrial Revolution to today</p>
+        <button onclick="scrollToSection('beginning')">Start the Journey</button>
+    </header>
+    
+    <section id="beginning">
+        <h2>The Beginning of the Problem</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <img height="200px" src="https://www.briangwilliams.us/fossil-fuels-pollution/images/727_54154_featured_image.jpg" alt="Industrial Revolution">
+                <h3>Late 18th Century: Industrial Revolution</h3>
+                <p>Birth of fossil fuel use; coal and oil become primary energy sources.</p>
+            </div>
+            <div class="timeline-event">
+                <img height="400px" src="https://assets.weforum.org/editor/SrMWKGezyLQrDRcVDQRy-IxhZiH3CFAoNxEtohMKEng.png" alt="CO₂ levels rise">
+                <h3>Early 19th Century: Initial Rise in CO₂ Levels</h3>
+                <p>Fossil fuel combustion increases CO₂ linking emissions to industrial activity.</p>
+            </div>
+            <!-- More timeline events here -->
+        </div>
+    </section>
+    
+    <section id="emissions">
+        <h2>Growth of Greenhouse Gas Emissions</h2>
+        <div>
+            <img height="100px" src="https://www.gannett-cdn.com/-mm-/ca04dba90fbe2a1f7421974fed1244681a436ae5/c=44-151-4365-2591/local/-/media/USATODAY/USATODAY/2014/09/09/1410267357000-AP_United_Nations_Global_Warming.jpg?width=3200&height=1680&fit=crop" alt="Greenhouse Emissions" class="section-image">
+            <p>Urbanization and industrialization increased the concentration of methane, nitrous oxide, and carbon dioxide in the atmosphere.</p>
+            <canvas height="100px" id="emissionsChart"></canvas>
+        </div>
+    </section>
+    
+    <section id="impact">
+        <h2>Impact on the Planet</h2>
+        <img height="100px" src="https://static01.nyt.com/images/2021/01/29/us/global-climate-risks-promo-1611263845212/global-climate-risks-promo-1611263845212-facebookJumbo-v5.jpg?year=2021&h=549&w=1050&s=11c60a99c83044eba4a5a81e73b00e0ae58fdc7f6a0ca369d74d90da31c1668f&k=ZQJBKqZ0VN" alt="Impact of Climate Change" class="section-image">
+        <p>The impact of climate change is evident in extreme weather events, biodiversity loss, and economic costs.</p>
+        <canvas height="100" id="impactChart"></canvas>
+    </section>
+
+
+
+    <script src="chart.js"></script>
+</body>
+</html>
